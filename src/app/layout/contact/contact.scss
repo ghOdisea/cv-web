@@ -1,0 +1,44 @@
+.contact {
+  background: var(--color-surface);
+}
+
+.contact__text {
+  max-width: 40rem;
+  margin-bottom: var(--space-8);
+}
+
+.contact__email {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 40rem;
+  background: var(--color-bg);
+}
+
+.contact__address {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  word-break: break-all;
+}
+
+.contact__email-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.contact__status {
+  min-height: 1.5em;
+  font-size: var(--fs-sm);
+  color: var(--color-accent);
+}
+
+.contact__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block: var(--space-8) var(--space-12);
+}
+
+.contact__legal {
+  font-size: var(--fs-sm);
+}

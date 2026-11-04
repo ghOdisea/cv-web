@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Contact } from './layout/contact/contact';
 import { Header } from './layout/header/header';
 import { About } from './sections/about/about';
 import { Hero } from './sections/hero/hero';
@@ -12,7 +13,7 @@ import { Transferable } from './sections/transferable/transferable';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, About, Path, Experience, Projects, Transferable, Skills, Education, Languages],
+  imports: [Header, Contact, Hero, About, Path, Experience, Projects, Transferable, Skills, Education, Languages],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
