@@ -39,7 +39,19 @@ npm run build      # production build → dist/cv-web/browser
 The site is deployed to GitHub Pages by the `deploy.yml` workflow
 (build with `--base-href /cv-web/`, then `actions/upload-pages-artifact` + `actions/deploy-pages`).
 
-Until the content is approved, deploy is **manual**: *Actions → Deploy → Run workflow*.
+Until the content is approved, deploy is **manual**:
+
+1. One-time setup: *Settings → Pages → Build and deployment → Source: **GitHub Actions***.
+2. *Actions → Deploy to GitHub Pages → Run workflow*.
+3. Site URL: https://ghodisea.github.io/cv-web/
+
+To deploy automatically on every merge, add `push: branches: [main]` to `on:` in `.github/workflows/deploy.yml`.
+
+## Content
+
+- All texts: `public/i18n/en.json` and `public/i18n/es.json`. Anything marked `PENDING` is highlighted on the page until filled in.
+- CV PDFs: add `public/cv/cv-en.pdf` / `cv-es.pdf` and enable them in `CV_PDF_AVAILABLE` (`src/app/core/profile.ts`).
+- Case-study screenshots: see `public/projects/event-platform/README.md`.
 
 ## Workflow
 
