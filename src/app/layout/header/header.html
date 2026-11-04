@@ -1,0 +1,49 @@
+<header class="header" *transloco="let t">
+  <a class="skip-link" href="#main">{{ t('nav.skip') }}</a>
+
+  <div class="container header__inner">
+    <a class="header__brand" href="#top" (click)="closeMenu()">Gonzalo Fourtané</a>
+
+    <button
+      type="button"
+      class="header__menu-btn"
+      aria-controls="site-nav"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
+    >
+      <span class="visually-hidden">{{ t('nav.menu') }}</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+        @if (menuOpen()) {
+          <path d="M6 6l12 12M18 6L6 18" />
+        } @else {
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        }
+      </svg>
+    </button>
+
+    <nav id="site-nav" class="header__nav" [class.is-open]="menuOpen()" [attr.aria-label]="t('nav.label')">
+      <ul role="list" class="header__links">
+        @for (id of sections; track id) {
+          <li>
+            <a [href]="'#' + id" (click)="closeMenu()">{{ t('nav.' + id) }}</a>
+          </li>
+        }
+      </ul>
+
+      <div class="lang-switch" role="group" [attr.aria-label]="t('nav.language')">
+        @for (lang of langs; track lang) {
+          <button
+            type="button"
+            class="lang-switch__btn"
+            [attr.lang]="lang"
+            [attr.aria-pressed]="language.lang() === lang"
+            [attr.aria-label]="langLabels[lang]"
+            (click)="setLang(lang)"
+          >
+            {{ lang.toUpperCase() }}
+          </button>
+        }
+      </div>
+    </nav>
+  </div>
+</header>
