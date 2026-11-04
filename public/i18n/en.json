@@ -31,11 +31,16 @@
   },
   "about": {
     "title": "About me",
-    "text": "Cloud Support Engineer specializing in the Microsoft 365 Security and Identity ecosystem (Defender, Purview, Entra ID, Intune), with a backend development background in TypeScript and Node.js. Before tech, I spent years leading hospitality teams in high-pressure environments, which shaped how I handle incidents, communicate with customers and take ownership of problems."
+    "text": "Cloud Support Engineer specializing in the Microsoft 365 Security and Identity ecosystem (Defender, Purview, Entra ID), with a backend development background in TypeScript and Node.js. Before tech, I spent years leading hospitality teams in high-pressure environments, which shaped how I handle incidents, communicate with customers and take ownership of problems."
   },
   "path": {
     "title": "My path",
     "items": [
+      {
+        "period": "2012–2015",
+        "title": "Industrial maintenance & logistics",
+        "text": "Industrial gases company: AutoCAD piping design for liquid nitrogen and oxygen tankers, on-site team leadership and warehouse stock control."
+      },
       {
         "period": "2015–2025",
         "title": "Hospitality",
@@ -43,7 +48,7 @@
       },
       {
         "period": "2020–2023",
-        "title": "First steps in tech",
+        "title": "Back to tech",
         "text": "CAD/3D design courses (CIM-UPC), then ITS Python (2023)."
       },
       {
@@ -64,8 +69,8 @@
       {
         "role": "Cloud Support Engineer, M365 Specialist",
         "company": "Concentrix",
-        "period": "Feb 2025 – Present",
-        "text": "Level 2 technical support for Microsoft 365 enterprise environments, resolving complex incidents on security, identity, compliance and endpoint management across Defender, Intune, Entra ID, Purview, Exchange Online and Azure, aligned with Microsoft best practices."
+        "period": "Feb 2025 – Sep 2025",
+        "text": "Level 2 technical support for Microsoft 365 enterprise environments, resolving complex incidents on security, identity and compliance across Defender, Entra ID, Purview, Exchange Online and Azure, aligned with Microsoft best practices."
       },
       {
         "role": "Backend Developer",

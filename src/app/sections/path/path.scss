@@ -1,4 +1,4 @@
-// Vertical on mobile, horizontal from tablet up.
+// Vertical on mobile/tablet, horizontal on desktop.
 .timeline {
   --dot: 0.9rem;
   display: grid;
@@ -50,9 +50,9 @@
   margin-block: var(--space-1) var(--space-2);
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 64rem) {
   .timeline {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: var(--space-6);
     padding-left: 0;
     padding-top: var(--space-8);
