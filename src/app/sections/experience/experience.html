@@ -1,0 +1,43 @@
+<section id="experience" class="section" aria-labelledby="experience-title" *transloco="let t">
+  <div class="container">
+    <h2 id="experience-title" class="section__title">{{ t('experience.title') }}</h2>
+
+    <ol role="list" class="roles">
+      @for (r of tech(); track $index) {
+        <li class="role">
+          <ng-container *ngTemplateOutlet="roleTpl; context: { $implicit: r }" />
+        </li>
+      }
+    </ol>
+
+    <details class="hospitality card">
+      <summary class="hospitality__summary">
+        <span>
+          <strong>{{ t('experience.hospitality.summary') }}</strong>
+          <span class="muted hospitality__hint">{{ t('experience.hospitality.hint') }}</span>
+        </span>
+        <app-icon name="chevron" class="hospitality__chevron" />
+      </summary>
+
+      <ol role="list" class="roles roles--compact">
+        @for (r of hospitality(); track $index) {
+          <li class="role">
+            <ng-container *ngTemplateOutlet="roleTpl; context: { $implicit: r }" />
+          </li>
+        }
+      </ol>
+      <p class="hospitality__earlier">
+        <strong>{{ t('experience.hospitality.earlierTitle') }}:</strong>
+        <span class="muted">{{ t('experience.hospitality.earlier') }}</span>
+      </p>
+    </details>
+  </div>
+</section>
+
+<ng-template #roleTpl let-r>
+  <p class="role__period">{{ r.period }}</p>
+  <h3 class="role__title">
+    {{ r.role }} <span class="role__company">· {{ r.company }}</span>
+  </h3>
+  <p class="role__text muted">{{ r.text }}</p>
+</ng-template>

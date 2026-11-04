@@ -1,0 +1,102 @@
+<section id="projects" class="section" aria-labelledby="projects-title" *transloco="let t">
+  <div class="container">
+    <h2 id="projects-title" class="section__title">{{ t('projects.title') }}</h2>
+
+    @let cs = caseStudy();
+    <article class="card case" aria-labelledby="case-title">
+      <header class="case__header">
+        <p class="case__eyebrow">{{ t('projects.caseStudy') }}</p>
+        <h3 id="case-title" class="case__title">{{ cs.name }}</h3>
+        <p class="muted">{{ cs.meta }}</p>
+        <p class="case__private">
+          <app-icon name="lock" /> {{ t('projects.private') }}
+        </p>
+      </header>
+
+      <dl class="case__facts">
+        <div>
+          <dt>{{ t('projects.problem') }}</dt>
+          <dd [class.pending]="isPending(cs.problem)">{{ cs.problem }}</dd>
+        </div>
+        <div>
+          <dt>{{ t('projects.solution') }}</dt>
+          <dd>{{ cs.solution }}</dd>
+        </div>
+        <div>
+          <dt>{{ t('projects.stack') }}</dt>
+          <dd>
+            <ul role="list" class="tags">
+              @for (tag of cs.tags; track tag) {
+                <li class="tag">{{ tag }}</li>
+              }
+            </ul>
+          </dd>
+        </div>
+      </dl>
+
+      <h4 class="case__subtitle">{{ t('projects.architecture') }}</h4>
+      <figure class="diagram">
+        <div class="diagram__flow">
+          <div class="diagram__node">
+            <strong>{{ cs.diagram.client }}</strong>
+            <span [class.pending]="isPending(cs.diagram.clientDetail)">{{ cs.diagram.clientDetail }}</span>
+          </div>
+          <span class="diagram__arrow" aria-hidden="true"></span>
+          <div class="diagram__node diagram__node--main">
+            <strong>{{ cs.diagram.api }}</strong>
+            <span>{{ cs.diagram.apiDetail }}</span>
+          </div>
+          <span class="diagram__arrow" aria-hidden="true"></span>
+          <div class="diagram__node">
+            <strong>{{ cs.diagram.db }}</strong>
+            <span [class.pending]="isPending(cs.diagram.dbDetail)">{{ cs.diagram.dbDetail }}</span>
+          </div>
+        </div>
+        <div class="diagram__infra" [class.pending]="cs.diagram.infra.includes('PENDING')">
+          {{ cs.diagram.infra }}
+        </div>
+        <figcaption class="visually-hidden">{{ cs.diagram.label }}</figcaption>
+      </figure>
+
+      <h4 class="case__subtitle">{{ t('projects.screenshots') }}</h4>
+      <ul role="list" class="shots">
+        @for (shot of cs.screenshots; track shot.src) {
+          <li>
+            <img [src]="shot.src" [alt]="shot.alt" loading="lazy" decoding="async" width="1600" height="1000" />
+          </li>
+        } @empty {
+          @for (slot of placeholderSlots; track slot) {
+            <li class="shots__placeholder pending">{{ t('projects.screenshotPending') }}</li>
+          }
+        }
+      </ul>
+    </article>
+
+    <ul role="list" class="projects">
+      @for (p of projects(); track p.name) {
+        <li class="card project">
+          <h3 class="project__title">
+            {{ p.name }}
+            @if (p.badge) {
+              <span class="project__badge">{{ p.badge }}</span>
+            }
+          </h3>
+          <p class="project__meta muted">{{ p.meta }}</p>
+          <p class="project__text">{{ p.text }}</p>
+          <ul role="list" class="tags">
+            @for (tag of p.tags; track tag) {
+              <li class="tag" [class.pending]="isPending(tag)">{{ tag }}</li>
+            }
+          </ul>
+          @if (p.link) {
+            <a class="project__link" [href]="p.link" target="_blank" rel="noopener noreferrer">
+              {{ p.name }} <app-icon name="external" />
+            </a>
+          } @else {
+            <p class="project__link pending">{{ t('projects.linkPending') }}</p>
+          }
+        </li>
+      }
+    </ul>
+  </div>
+</section>
