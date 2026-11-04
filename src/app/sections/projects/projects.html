@@ -5,7 +5,10 @@
     @let cs = caseStudy();
     <article class="card case" aria-labelledby="case-title">
       <header class="case__header">
-        <p class="case__eyebrow">{{ t('projects.caseStudy') }}</p>
+        <p class="case__eyebrow">
+          {{ t('projects.caseStudy') }}
+          <span class="case__status">{{ cs.status }}</span>
+        </p>
         <h3 id="case-title" class="case__title">{{ cs.name }}</h3>
         <p class="muted">{{ cs.meta }}</p>
         <p class="case__private">

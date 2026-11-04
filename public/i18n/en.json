@@ -137,6 +137,7 @@
     "screenshotPending": "Screenshot — PENDING",
     "linkPending": "Link — PENDING",
     "eventPlatform": {
+      "status": "In development",
       "name": "Event Organization Platform",
       "meta": "Personal project · Oct 2024 – present",
       "problem": "Staffing events: knowing how many people each shift needs, who signs up, with which specialization, and who finally works each shift — without overbooking any position.",
