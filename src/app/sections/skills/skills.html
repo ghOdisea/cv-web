@@ -1,0 +1,32 @@
+<section id="skills" class="section" aria-labelledby="skills-title" *transloco="let t">
+  <div class="container">
+    <h2 id="skills-title" class="section__title">{{ t('skills.title') }}</h2>
+
+    <div class="groups">
+      @for (g of groups; track g.key) {
+        <section class="card group" [attr.aria-labelledby]="'skills-' + g.key">
+          <h3 [id]="'skills-' + g.key" class="group__title">
+            {{ t('skills.' + g.key) }}
+            @if (g.pending) {
+              <span class="pending group__flag">{{ t('skills.familiarPending') }}</span>
+            }
+          </h3>
+          <ul role="list" class="tags">
+            @for (item of g.items; track item) {
+              <li class="tag">{{ item }}</li>
+            }
+          </ul>
+        </section>
+      }
+
+      <section class="card group group--soft" aria-labelledby="skills-soft">
+        <h3 id="skills-soft" class="group__title">{{ t('skills.soft') }}</h3>
+        <ul role="list" class="tags">
+          @for (item of soft(); track item) {
+            <li class="tag tag--soft">{{ item }}</li>
+          }
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>

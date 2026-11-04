@@ -5,10 +5,12 @@ import { Hero } from './sections/hero/hero';
 import { Path } from './sections/path/path';
 import { Experience } from './sections/experience/experience';
 import { Projects } from './sections/projects/projects';
+import { Skills } from './sections/skills/skills';
+import { Transferable } from './sections/transferable/transferable';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, About, Path, Experience, Projects],
+  imports: [Header, Hero, About, Path, Experience, Projects, Transferable, Skills],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
