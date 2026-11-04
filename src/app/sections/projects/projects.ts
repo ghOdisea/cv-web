@@ -10,6 +10,7 @@ interface Screenshot {
 
 interface CaseStudy {
   name: string;
+  status: string;
   meta: string;
   problem: string;
   solution: string;

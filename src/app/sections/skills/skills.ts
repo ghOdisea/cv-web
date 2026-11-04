@@ -21,8 +21,7 @@ const SKILL_GROUPS: readonly SkillGroup[] = [
     items: ['Docker', 'Git', 'GitHub Actions (CI/CD)', 'Linux', 'PowerShell', 'Bash', 'SMTP'],
   },
   { key: 'methodologies', items: ['Agile (Scrum)'] },
-  // PENDING: confirm Angular before publishing.
-  { key: 'familiar', items: ['Angular', 'Go (intro)'], pendingItems: ['Angular'] },
+  { key: 'familiar', items: ['Angular', 'Go (intro)'] },
 ];
 
 @Component({

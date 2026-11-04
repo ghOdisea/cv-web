@@ -137,6 +137,7 @@
     "screenshotPending": "Captura — PENDING",
     "linkPending": "Enlace — PENDING",
     "eventPlatform": {
+      "status": "En desarrollo",
       "name": "Plataforma de organización de eventos",
       "meta": "Proyecto personal · Oct 2024 – actualidad",
       "problem": "Planificar el personal de un evento: saber cuánta gente necesita cada turno, quién se apunta, con qué especialidad y quién trabaja finalmente en cada turno, sin pasarse de las plazas de ningún puesto.",
