@@ -7,13 +7,15 @@
         <section class="card group" [attr.aria-labelledby]="'skills-' + g.key">
           <h3 [id]="'skills-' + g.key" class="group__title">
             {{ t('skills.' + g.key) }}
-            @if (g.pending) {
-              <span class="pending group__flag">{{ t('skills.familiarPending') }}</span>
-            }
           </h3>
           <ul role="list" class="tags">
             @for (item of g.items; track item) {
-              <li class="tag">{{ item }}</li>
+              <li class="tag" [class.pending]="g.pendingItems?.includes(item)">
+                {{ item }}
+                @if (g.pendingItems?.includes(item)) {
+                  <span class="group__flag">— {{ t('skills.familiarPending') }}</span>
+                }
+              </li>
             }
           </ul>
         </section>

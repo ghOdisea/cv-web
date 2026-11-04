@@ -6,12 +6,12 @@ interface SkillGroup {
   /** i18n key under `skills.` for the group title. */
   key: 'm365' | 'backend' | 'devops' | 'methodologies' | 'familiar';
   items: readonly string[];
-  /** Still to be confirmed by the owner. */
-  pending?: boolean;
+  /** Items still to be confirmed by the owner (highlighted as PENDING). */
+  pendingItems?: readonly string[];
 }
 
 const SKILL_GROUPS: readonly SkillGroup[] = [
-  { key: 'm365', items: ['Exchange Online', 'Entra ID', 'Intune', 'Defender', 'Purview', 'Azure'] },
+  { key: 'm365', items: ['Exchange Online', 'Entra ID', 'Defender', 'Purview', 'Azure'] },
   {
     key: 'backend',
     items: ['TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'REST APIs', 'Hexagonal Architecture', 'Socket.io'],
@@ -21,8 +21,8 @@ const SKILL_GROUPS: readonly SkillGroup[] = [
     items: ['Docker', 'Git', 'GitHub Actions (CI/CD)', 'Linux', 'PowerShell', 'Bash', 'SMTP'],
   },
   { key: 'methodologies', items: ['Agile (Scrum)'] },
-  // PENDING: confirm before publishing ("solo si es cierto").
-  { key: 'familiar', items: ['Python', 'Angular', 'Go (intro)'], pending: true },
+  // PENDING: confirm Angular before publishing.
+  { key: 'familiar', items: ['Angular', 'Go (intro)'], pendingItems: ['Angular'] },
 ];
 
 @Component({

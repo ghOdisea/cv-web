@@ -31,11 +31,16 @@
   },
   "about": {
     "title": "Sobre mí",
-    "text": "Cloud Support Engineer especializado en el ecosistema de seguridad e identidad de Microsoft 365 (Defender, Purview, Entra ID, Intune), con experiencia en desarrollo backend con TypeScript y Node.js. Antes de dedicarme a la tecnología, pasé años liderando equipos de hostelería en entornos de alta presión, algo que ha marcado cómo gestiono incidencias, cómo me comunico con los clientes y cómo me hago cargo de los problemas."
+    "text": "Cloud Support Engineer especializado en el ecosistema de seguridad e identidad de Microsoft 365 (Defender, Purview, Entra ID), con experiencia en desarrollo backend con TypeScript y Node.js. Antes de dedicarme a la tecnología, pasé años liderando equipos de hostelería en entornos de alta presión, algo que ha marcado cómo gestiono incidencias, cómo me comunico con los clientes y cómo me hago cargo de los problemas."
   },
   "path": {
     "title": "Mi trayectoria",
     "items": [
+      {
+        "period": "2012–2015",
+        "title": "Mantenimiento industrial y logística",
+        "text": "Empresa de gases del aire: diseño de tuberías en AutoCAD para cisternas de nitrógeno y oxígeno líquido, dirección de equipos en obra y control de stock del almacén."
+      },
       {
         "period": "2015–2025",
         "title": "Hostelería",
@@ -43,7 +48,7 @@
       },
       {
         "period": "2020–2023",
-        "title": "Primeros pasos en tecnología",
+        "title": "De vuelta a la tecnología",
         "text": "Cursos de diseño CAD/3D (CIM-UPC) y después ITS Python (2023)."
       },
       {
@@ -64,8 +69,8 @@
       {
         "role": "Cloud Support Engineer, M365 Specialist",
         "company": "Concentrix",
-        "period": "Feb 2025 – Actualidad",
-        "text": "Soporte técnico de nivel 2 para entornos empresariales de Microsoft 365: resolución de incidencias complejas de seguridad, identidad, cumplimiento y gestión de dispositivos en Defender, Intune, Entra ID, Purview, Exchange Online y Azure, siguiendo las buenas prácticas de Microsoft."
+        "period": "Feb 2025 – Sep 2025",
+        "text": "Soporte técnico de nivel 2 para entornos empresariales de Microsoft 365: resolución de incidencias complejas de seguridad, identidad y cumplimiento en Defender, Entra ID, Purview, Exchange Online y Azure, siguiendo las buenas prácticas de Microsoft."
       },
       {
         "role": "Backend Developer",

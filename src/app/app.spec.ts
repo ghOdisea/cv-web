@@ -43,7 +43,7 @@ describe('App sections', () => {
     await firstValueFrom(TestBed.inject(TranslocoService).load('en'));
   });
 
-  it('renders the hero with external links and the 4 path milestones', async () => {
+  it('renders the hero with external links and the 5 path milestones', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const el = fixture.nativeElement as HTMLElement;
@@ -53,7 +53,7 @@ describe('App sections', () => {
     expect(external.length).toBe(2);
     external.forEach((a) => expect(a.getAttribute('rel')).toBe('noopener noreferrer'));
     expect(el.querySelector('.hero a[href^="mailto:"]')).toBeTruthy();
-    expect(el.querySelectorAll('#path .timeline__item').length).toBe(4);
+    expect(el.querySelectorAll('#path .timeline__item').length).toBe(5);
   });
 
   it('renders tech roles, collapsed hospitality and the private case study without code link', async () => {
