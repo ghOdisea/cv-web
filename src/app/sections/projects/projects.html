@@ -45,6 +45,11 @@
           <div class="diagram__node diagram__node--main">
             <strong>{{ cs.diagram.api }}</strong>
             <span>{{ cs.diagram.apiDetail }}</span>
+            <ol role="list" class="layers">
+              @for (layer of cs.diagram.layers; track layer; let i = $index) {
+                <li class="layers__item" [style.--depth]="i">{{ layer }}</li>
+              }
+            </ol>
           </div>
           <span class="diagram__arrow" aria-hidden="true"></span>
           <div class="diagram__node">
@@ -57,6 +62,13 @@
         </div>
         <figcaption class="visually-hidden">{{ cs.diagram.label }}</figcaption>
       </figure>
+
+      <h4 class="case__subtitle">{{ t('projects.highlights') }}</h4>
+      <ul class="highlights">
+        @for (h of cs.highlights; track $index) {
+          <li>{{ h }}</li>
+        }
+      </ul>
 
       <h4 class="case__subtitle">{{ t('projects.screenshots') }}</h4>
       <ul role="list" class="shots">

@@ -139,26 +139,42 @@
     "eventPlatform": {
       "name": "Event Organization Platform",
       "meta": "Personal project · Oct 2024 – present",
-      "problem": "PENDING — describe the problem this platform solves.",
-      "solution": "Web app for event and staff organization, built from my own experience running bars at large events.",
+      "problem": "Staffing events: knowing how many people each shift needs, who signs up, with which specialization, and who finally works each shift — without overbooking any position.",
+      "solution": "Managers create events and shifts with positions per specialization (e.g. 6 waiters, 2 bartenders). Staff apply with one of their specializations; managers accept, reject or assign directly, and the system never exceeds a position's capacity. Everyone sees their own schedule and each shift's lineup. Born from my own experience running bars at large events.",
       "tags": [
         "Node.js",
         "TypeScript",
+        "Express",
+        "PostgreSQL",
+        "Knex",
+        "Angular",
+        "PrimeNG",
         "Docker",
-        "CI/CD",
-        "Real-time APIs"
+        "GitHub Actions"
       ],
       "diagram": {
         "label": "Simplified architecture diagram",
         "client": "Web client",
-        "clientDetail": "PENDING — frontend",
-        "api": "Backend API",
-        "apiDetail": "Node.js + TypeScript · REST & real-time",
+        "clientDetail": "Angular · PrimeNG · Tailwind",
+        "api": "REST API",
+        "apiDetail": "Node.js + TypeScript + Express · hexagonal architecture",
+        "layers": [
+          "infrastructure",
+          "application",
+          "domain"
+        ],
         "db": "Database",
-        "dbDetail": "PENDING",
-        "infra": "Docker · CI/CD (PENDING — tool)"
+        "dbDetail": "PostgreSQL · Knex migrations",
+        "infra": "Docker Compose · GitHub Actions CI"
       },
-      "screenshots": []
+      "screenshots": [],
+      "highlights": [
+        "Hexagonal architecture (ports & adapters): dependencies always point inward, towards the domain.",
+        "Data integrity enforced by PostgreSQL itself (composite foreign keys, partial unique indexes), not only in code.",
+        "Capacity rules checked inside the same transaction that writes (Unit of Work).",
+        "Role-based access (admin · manager · staff) with cookie-based JWT sessions.",
+        "260+ tests — unit, HTTP integration and repositories against real PostgreSQL (Testcontainers). CI also runs every migration up and down."
+      ]
     },
     "items": [
       {
@@ -182,7 +198,8 @@
         ],
         "link": ""
       }
-    ]
+    ],
+    "highlights": "Key technical decisions"
   },
   "transferable": {
     "title": "Transferable skills",
