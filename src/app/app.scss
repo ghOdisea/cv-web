@@ -1,0 +1,7 @@
+main {
+  padding-top: var(--header-h);
+
+  &:focus {
+    outline: none;
+  }
+}
