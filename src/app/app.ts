@@ -4,13 +4,15 @@ import { About } from './sections/about/about';
 import { Hero } from './sections/hero/hero';
 import { Path } from './sections/path/path';
 import { Experience } from './sections/experience/experience';
+import { Education } from './sections/education/education';
+import { Languages } from './sections/languages/languages';
 import { Projects } from './sections/projects/projects';
 import { Skills } from './sections/skills/skills';
 import { Transferable } from './sections/transferable/transferable';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Hero, About, Path, Experience, Projects, Transferable, Skills],
+  imports: [Header, Hero, About, Path, Experience, Projects, Transferable, Skills, Education, Languages],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

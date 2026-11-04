@@ -81,4 +81,14 @@ describe('App sections', () => {
     expect(el.querySelectorAll('#skills .group').length).toBe(6);
     expect(el.querySelector('#skills')?.textContent).toContain('Entra ID');
   });
+
+  it('renders education, certifications and languages', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const el = fixture.nativeElement as HTMLElement;
+
+    expect(el.querySelectorAll('#education .item').length).toBe(8);
+    expect(el.querySelector('#education .item--cert')?.textContent).toContain('SC-900');
+    expect(el.querySelectorAll('#languages .lang').length).toBe(4);
+  });
 });
