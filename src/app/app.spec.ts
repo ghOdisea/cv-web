@@ -33,3 +33,26 @@ describe('App', () => {
     expect(pressed?.textContent?.trim()).toBe('EN');
   });
 });
+
+describe('App sections', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [App],
+      providers: [provideTranslocoTesting()],
+    }).compileComponents();
+    await firstValueFrom(TestBed.inject(TranslocoService).load('en'));
+  });
+
+  it('renders the hero with external links and the 4 path milestones', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const el = fixture.nativeElement as HTMLElement;
+
+    expect(el.querySelector('h1')?.textContent).toContain('Gonzalo Fourtané');
+    const external = el.querySelectorAll('.hero a[target="_blank"]');
+    expect(external.length).toBe(2);
+    external.forEach((a) => expect(a.getAttribute('rel')).toBe('noopener noreferrer'));
+    expect(el.querySelector('.hero a[href^="mailto:"]')).toBeTruthy();
+    expect(el.querySelectorAll('#path .timeline__item').length).toBe(4);
+  });
+});

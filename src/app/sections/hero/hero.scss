@@ -1,0 +1,35 @@
+.hero {
+  padding-block: clamp(var(--space-12), 12vw, 8rem) var(--space-16);
+  background:
+    radial-gradient(60rem 30rem at 85% -10%, color-mix(in srgb, var(--color-accent) 14%, transparent), transparent 70%),
+    var(--color-bg);
+}
+
+.hero__eyebrow {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.hero__name {
+  font-size: var(--fs-hero);
+  font-weight: 800;
+  margin-bottom: var(--space-6);
+}
+
+.hero__tagline {
+  max-width: 40rem;
+  font-size: var(--fs-xl);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: var(--space-8);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
