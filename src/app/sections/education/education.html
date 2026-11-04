@@ -1,0 +1,31 @@
+<section id="education" class="section" aria-labelledby="education-title" *transloco="let t">
+  <div class="container">
+    <h2 id="education-title" class="section__title">{{ t('education.title') }}</h2>
+
+    <div class="columns">
+      <div>
+        <h3 class="col__title">{{ t('education.educationTitle') }}</h3>
+        <ul role="list" class="list">
+          @for (c of education(); track $index) {
+            <li class="item">
+              <p class="item__name">{{ c.name }}</p>
+              <p class="item__meta muted">{{ c.org }} · {{ c.period }}</p>
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="col__title">{{ t('education.certificationsTitle') }}</h3>
+        <ul role="list" class="list">
+          @for (c of certifications(); track $index) {
+            <li class="item card item--cert">
+              <p class="item__name">{{ c.name }}</p>
+              <p class="item__meta muted">{{ c.org }} · {{ c.period }}</p>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
