@@ -1,0 +1,57 @@
+<footer id="contact" class="section contact" aria-labelledby="contact-title" *transloco="let t">
+  <div class="container">
+    <h2 id="contact-title" class="section__title">{{ t('contact.title') }}</h2>
+    <p class="contact__text muted">{{ t('contact.text') }}</p>
+
+    <div class="contact__email card">
+      <a class="contact__address" [href]="mailto()" [attr.aria-label]="t('hero.emailLabel') + ': ' + email">
+        {{ email }}
+      </a>
+      <div class="contact__email-actions">
+        <a class="btn btn--primary" [href]="mailto()">
+          <app-icon name="mail" /> {{ t('contact.sendEmail') }}
+        </a>
+        <button type="button" class="btn" (click)="copyEmail()">
+          <app-icon [name]="copyState() === 'copied' ? 'check' : 'copy'" /> {{ t('contact.copyEmail') }}
+        </button>
+      </div>
+      <p class="contact__status" role="status" aria-live="polite">
+        @switch (copyState()) {
+          @case ('copied') {
+            {{ t('contact.copied') }}
+          }
+          @case ('failed') {
+            {{ t('contact.copyFailed') }}
+          }
+        }
+      </p>
+    </div>
+
+    <ul role="list" class="contact__social">
+      <li>
+        <a
+          class="btn"
+          [href]="profile.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="t('hero.linkedinLabel')"
+        >
+          <app-icon name="linkedin" /> LinkedIn
+        </a>
+      </li>
+      <li>
+        <a
+          class="btn"
+          [href]="profile.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="t('hero.githubLabel')"
+        >
+          <app-icon name="github" /> GitHub
+        </a>
+      </li>
+    </ul>
+
+    <p class="contact__legal muted">{{ t('contact.footer', { year }) }}</p>
+  </div>
+</footer>
