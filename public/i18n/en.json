@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "title": "Gonzalo Fourtané — Technical Support Engineer & Back End Developer",
+    "description": "Cloud Support Engineer specializing in Microsoft 365 security and identity, with a backend development background in TypeScript and Node.js."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "label": "Main navigation",
+    "menu": "Menu",
+    "about": "About",
+    "path": "My path",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact",
+    "language": "Language",
+    "switchTo": "Switch language to {{ lang }}"
+  },
+  "hero": {
+    "name": "Gonzalo Fourtané",
+    "title": "Technical Support Engineer / Back End Developer",
+    "tagline": "From 8+ years leading bar teams under pressure to supporting enterprise cloud security and building backend software.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email",
+    "linkedinLabel": "LinkedIn profile (opens in a new tab)",
+    "githubLabel": "GitHub profile (opens in a new tab)",
+    "emailLabel": "Send me an email",
+    "downloadCv": "Download CV (PDF)"
+  },
+  "about": {
+    "title": "About me",
+    "text": "Cloud Support Engineer specializing in the Microsoft 365 Security and Identity ecosystem (Defender, Purview, Entra ID, Intune), with a backend development background in TypeScript and Node.js. Before tech, I spent years leading hospitality teams in high-pressure environments, which shaped how I handle incidents, communicate with customers and take ownership of problems."
+  },
+  "path": {
+    "title": "My path",
+    "items": [
+      {
+        "period": "2015–2025",
+        "title": "Hospitality",
+        "text": "Professional bartending and team leadership in hotels, restaurants and large events (Barcelona)."
+      },
+      {
+        "period": "2020–2023",
+        "title": "First steps in tech",
+        "text": "CAD/3D design courses (CIM-UPC), then ITS Python (2023)."
+      },
+      {
+        "period": "2024",
+        "title": "Career switch",
+        "text": "Backend Developer NodeJS (Barcelona Activa / IT Academy), ITA-WIKI project, hackathons."
+      },
+      {
+        "period": "2025",
+        "title": "Cloud security",
+        "text": "Cloud Support Engineer, Microsoft 365, at Concentrix."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "tech": [
+      {
+        "role": "Cloud Support Engineer, M365 Specialist",
+        "company": "Concentrix",
+        "period": "Feb 2025 – Present",
+        "text": "Level 2 technical support for Microsoft 365 enterprise environments, resolving complex incidents on security, identity, compliance and endpoint management across Defender, Intune, Entra ID, Purview, Exchange Online and Azure, aligned with Microsoft best practices."
+      },
+      {
+        "role": "Backend Developer",
+        "company": "ITA-WIKI, IT Academy · Barcelona Activa",
+        "period": "Sep 2024 – Dec 2024",
+        "text": "Agile/Scrum team. Maintained and extended backend services (TypeScript, Node.js, PostgreSQL). Led the database migration from Prisma to Knex.js for performance and scalability. Built an AI-powered feature that generates descriptive text for new resources."
+      },
+      {
+        "role": "Backend NodeJS bootcamp",
+        "company": "IT Academy",
+        "period": "Mar – Sep 2024",
+        "text": "Real-time chat with Socket.io; API design and architecture; Agile methodology; intro to Go."
+      }
+    ],
+    "hospitality": {
+      "summary": "8+ years in hospitality (2015–2025)",
+      "hint": "Show roles",
+      "items": [
+        {
+          "role": "Bar Manager, events",
+          "company": "Catering 21 de Marzo",
+          "period": "Aug 2023 – Summer 2025 · seasonal",
+          "text": "Bar operations for large-scale events: music festivals, corporate parties, motorsport hospitality. Team planning, logistics and service under high volume."
+        },
+        {
+          "role": "Assistant Head Bartender",
+          "company": "The Hoxton, Barcelona",
+          "period": "2022",
+          "text": "Hotel opening team: cocktail creation, team training, bar organization, staff planning and supplier orders."
+        },
+        {
+          "role": "Head Bartender / Floor Manager",
+          "company": "Blue Spot, Muticlub, PAX 49",
+          "period": "2019 – 2022",
+          "text": "Led bar teams, created cocktail menus, production and mise en place, managed floor and bar service (PAX 49: bar + floor)."
+        }
+      ],
+      "earlierTitle": "Earlier roles",
+      "earlier": "Lead Bartender at The Corner Hotel (4*, NN Hotels, 2017–2018); Surf House (2017); Lead Bartender at Ikibana and cellar work at La Textil Collective brewery (2023)."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "caseStudy": "Case study",
+    "private": "Private repository — code not public",
+    "problem": "Problem",
+    "solution": "Solution",
+    "stack": "Stack",
+    "architecture": "Architecture",
+    "screenshots": "Screenshots",
+    "screenshotPending": "Screenshot — PENDING",
+    "linkPending": "Link — PENDING",
+    "eventPlatform": {
+      "name": "Event Organization Platform",
+      "meta": "Personal project · Oct 2024 – present",
+      "problem": "PENDING — describe the problem this platform solves.",
+      "solution": "Web app for event and staff organization, built from my own experience running bars at large events.",
+      "tags": ["Node.js", "TypeScript", "Docker", "CI/CD", "Real-time APIs"],
+      "diagram": {
+        "label": "Simplified architecture diagram",
+        "client": "Web client",
+        "clientDetail": "PENDING — frontend",
+        "api": "Backend API",
+        "apiDetail": "Node.js + TypeScript · REST & real-time",
+        "db": "Database",
+        "dbDetail": "PENDING",
+        "infra": "Docker · CI/CD (PENDING — tool)"
+      }
+    },
+    "items": [
+      {
+        "name": "Incloumap",
+        "badge": "Finalist",
+        "meta": "Barcelona Activa Hackathon · Oct 2024",
+        "text": "App with information on Barcelona's districts built on Open Data BCN.",
+        "tags": ["PENDING — stack"]
+      },
+      {
+        "name": "NASA App Challenges Hackathon",
+        "badge": "",
+        "meta": "Hackathon · Oct 2024",
+        "text": "\"Sun App\" using official NASA resources; backend in Node.js/TypeScript; presented to judges and a non-technical audience.",
+        "tags": ["Node.js", "TypeScript"]
+      }
+    ]
+  },
+  "transferable": {
+    "title": "Transferable skills",
+    "intro": "What years behind the bar taught me, and where I use it today.",
+    "hospitality": "Hospitality",
+    "tech": "Tech",
+    "rows": [
+      ["Resolving incidents live during service", "Level 2 incident troubleshooting (M365)"],
+      ["Customer issues, de-escalation", "Customer-oriented support, clear communication"],
+      ["Planning shifts, delegating, onboarding and training staff", "Scrum teamwork, documenting and mentoring"],
+      ["Optimizing workflows, orders and mise en place", "Process automation, backend design"],
+      ["Explaining a menu to any guest", "Explaining technical topics to non-technical audiences (hackathon pitch)"]
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "m365": "Microsoft 365",
+    "backend": "Backend",
+    "devops": "DevOps & tooling",
+    "methodologies": "Methodologies",
+    "familiar": "Familiar with",
+    "familiarPending": "PENDING — confirm",
+    "soft": "Soft skills",
+    "softItems": ["Problem Solving", "Communication", "Teamwork", "Ownership", "Customer-Oriented", "Adaptability", "Continuous Learning"]
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "educationTitle": "Education",
+    "certificationsTitle": "Certifications",
+    "items": [
+      { "name": "Backend Developer NodeJS", "org": "Barcelona Activa / IT Academy", "period": "2024 · 18 weeks" },
+      { "name": "JavaScript Programming Fundamentals", "org": "Barcelona Activa", "period": "2024 · 7 weeks" },
+      { "name": "ITS Python", "org": "Fundació CIM · UPC", "period": "2023" },
+      { "name": "CAD & 3D design (AutoCAD, SolidWorks, Inventor, parametric design for 3D printing)", "org": "CIM · UPC", "period": "2020–2022" },
+      { "name": "Barmanager & Mixology", "org": "IAC Training", "period": "2016–2019" },
+      { "name": "Professional Bartender", "org": "Instituto Argentino de Coctelería", "period": "2015" },
+      { "name": "Electro-Mechanical Technician", "org": "E.T. N°11, Argentina", "period": "2005–2011" }
+    ],
+    "certifications": [
+      { "name": "SC-900 Exam Prep", "org": "QA", "period": "September 2025" }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      { "name": "Spanish", "level": "Native" },
+      { "name": "English", "level": "Advanced" },
+      { "name": "Catalan", "level": "Conversational (A2–B1)" },
+      { "name": "French", "level": "Conversational (A2–B1)" }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Open to new opportunities in cloud support, security and backend development. The fastest way to reach me is by email or LinkedIn.",
+    "emailSubject": "Contact from your CV website",
+    "sendEmail": "Send an email",
+    "copyEmail": "Copy email",
+    "copied": "Email copied to clipboard",
+    "copyFailed": "Could not copy — please copy it manually",
+    "footer": "Built with Angular · © {{ year }} Gonzalo Fourtané"
+  }
+}
