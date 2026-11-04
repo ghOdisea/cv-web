@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Gonzalo Fourtané — Technical Support Engineer & Back End Developer",
-    "description": "Cloud Support Engineer specializing in Microsoft 365 security and identity, with a backend development background in TypeScript and Node.js."
+    "description": "Former Cloud Support Engineer (Microsoft 365 security and identity) with a backend development background in TypeScript and Node.js. Open to new opportunities."
   },
   "nav": {
     "skip": "Skip to content",
@@ -20,18 +20,19 @@
   "hero": {
     "name": "Gonzalo Fourtané",
     "title": "Technical Support Engineer / Back End Developer",
-    "tagline": "From 8+ years leading bar teams under pressure to supporting enterprise cloud security and building backend software.",
+    "tagline": "After 8+ years leading bar teams under pressure, I moved into enterprise cloud security support — and I build backend software.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "email": "Email",
     "linkedinLabel": "LinkedIn profile (opens in a new tab)",
     "githubLabel": "GitHub profile (opens in a new tab)",
     "emailLabel": "Send me an email",
-    "downloadCv": "Download CV (PDF)"
+    "downloadCv": "Download CV (PDF)",
+    "openToWork": "Open to work"
   },
   "about": {
     "title": "About me",
-    "text": "Cloud Support Engineer specializing in the Microsoft 365 Security and Identity ecosystem (Defender, Purview, Entra ID), with a backend development background in TypeScript and Node.js. Before tech, I spent years leading hospitality teams in high-pressure environments, which shaped how I handle incidents, communicate with customers and take ownership of problems."
+    "text": "I worked as a Cloud Support Engineer specializing in the Microsoft 365 Security and Identity ecosystem (Defender, Purview, Entra ID), and I have a backend development background in TypeScript and Node.js. Before tech, I spent years leading hospitality teams in high-pressure environments, which shaped how I handle incidents, communicate with customers and take ownership of problems."
   },
   "path": {
     "title": "My path",
@@ -110,6 +111,18 @@
       ],
       "earlierTitle": "Earlier roles",
       "earlier": "Lead Bartender at The Corner Hotel (4*, NN Hotels, 2017–2018); Surf House (2017); Lead Bartender at Ikibana and cellar work at La Textil Collective brewery (2023)."
+    },
+    "industry": {
+      "summary": "Industrial maintenance & logistics (2012–2015)",
+      "hint": "Show role",
+      "items": [
+        {
+          "role": "Maintenance — VRAC (bulk transport)",
+          "company": "Industrial gases company",
+          "period": "2012 – 2015",
+          "text": "Piping plans for tanker trucks carrying liquid nitrogen and oxygen: 2D/3D piping design and flow diagrams in AutoCAD, through to on-site execution, leading teams of welders and mechanics to build installations at customer sites. I also spent a large part of my time organizing the company-wide materials warehouse (hundreds of references), applying organization methods and running stock control."
+        }
+      ]
     }
   },
   "projects": {

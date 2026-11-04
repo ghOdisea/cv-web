@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { LanguageService } from '../../core/i18n/language.service';
-import { CV_PDF_AVAILABLE, cvPdfPath, mailtoHref, PROFILE } from '../../core/profile';
+import { CV_PDF_AVAILABLE, cvPdfPath, mailtoHref, OPEN_TO_WORK, PROFILE } from '../../core/profile';
 import { Icon } from '../../shared/icon/icon';
 import { content } from '../../core/i18n/content';
 
@@ -17,6 +17,7 @@ export class Hero {
   private readonly subject = content<string>('contact.emailSubject');
 
   protected readonly profile = PROFILE;
+  protected readonly openToWork = OPEN_TO_WORK;
   protected readonly mailto = computed(() => mailtoHref(this.subject()));
   protected readonly cvPdf = computed(() => {
     const lang = this.language.lang();

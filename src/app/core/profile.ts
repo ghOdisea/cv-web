@@ -5,6 +5,9 @@ export const PROFILE = {
   github: 'https://github.com/ghOdisea',
 } as const;
 
+/** Shows the small "Open to work" badge in the hero. */
+export const OPEN_TO_WORK = true;
+
 /**
  * CV PDFs per language, served from `public/cv/cv-<lang>.pdf`.
  * Set to `true` once the file is added — the download button only shows for available files.

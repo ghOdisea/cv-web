@@ -57,7 +57,7 @@ describe('LanguageService', () => {
     expect(document.documentElement.lang).toBe('es');
     expect(TestBed.inject(Title).getTitle()).toContain('Back End Developer');
     expect(document.querySelector('meta[name="description"]')?.getAttribute('content')).toContain(
-      'especializado',
+      'Abierto a nuevas oportunidades',
     );
   });
 
