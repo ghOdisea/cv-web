@@ -14,11 +14,15 @@ interface CaseStudy {
   problem: string;
   solution: string;
   tags: string[];
+  highlights: string[];
   screenshots: Screenshot[];
   diagram: Record<
     'label' | 'client' | 'clientDetail' | 'api' | 'apiDetail' | 'db' | 'dbDetail' | 'infra',
     string
-  >;
+  > & {
+    /** Hexagonal layers, outermost first. */
+    layers: string[];
+  };
 }
 
 interface Project {

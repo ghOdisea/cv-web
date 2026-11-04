@@ -139,26 +139,42 @@
     "eventPlatform": {
       "name": "Plataforma de organización de eventos",
       "meta": "Proyecto personal · Oct 2024 – actualidad",
-      "problem": "PENDING — describe el problema que resuelve la plataforma.",
-      "solution": "Aplicación web para organizar eventos y personal, nacida de mi propia experiencia gestionando barras en grandes eventos.",
+      "problem": "Planificar el personal de un evento: saber cuánta gente necesita cada turno, quién se apunta, con qué especialidad y quién trabaja finalmente en cada turno, sin pasarse de las plazas de ningún puesto.",
+      "solution": "El manager crea eventos y turnos con puestos por especialidad (p. ej. 6 camareros, 2 de barra). El staff se apunta con una de sus especialidades; el manager acepta, rechaza o asigna directamente, y el sistema nunca supera la capacidad de un puesto. Cada persona ve su agenda y el lineup de cada turno. Nace de mi propia experiencia gestionando barras en grandes eventos.",
       "tags": [
         "Node.js",
         "TypeScript",
+        "Express",
+        "PostgreSQL",
+        "Knex",
+        "Angular",
+        "PrimeNG",
         "Docker",
-        "CI/CD",
-        "APIs en tiempo real"
+        "GitHub Actions"
       ],
       "diagram": {
         "label": "Diagrama de arquitectura simplificado",
         "client": "Cliente web",
-        "clientDetail": "PENDING — frontend",
-        "api": "API backend",
-        "apiDetail": "Node.js + TypeScript · REST y tiempo real",
+        "clientDetail": "Angular · PrimeNG · Tailwind",
+        "api": "API REST",
+        "apiDetail": "Node.js + TypeScript + Express · arquitectura hexagonal",
+        "layers": [
+          "infraestructura",
+          "aplicación",
+          "dominio"
+        ],
         "db": "Base de datos",
-        "dbDetail": "PENDING",
-        "infra": "Docker · CI/CD (PENDING — herramienta)"
+        "dbDetail": "PostgreSQL · migraciones con Knex",
+        "infra": "Docker Compose · CI con GitHub Actions"
       },
-      "screenshots": []
+      "screenshots": [],
+      "highlights": [
+        "Arquitectura hexagonal (puertos y adaptadores): las dependencias apuntan siempre hacia dentro, hacia el dominio.",
+        "La integridad de los datos la garantiza el propio PostgreSQL (claves foráneas compuestas, índices únicos parciales), no solo el código.",
+        "Las reglas de capacidad se comprueban dentro de la misma transacción que escribe (Unit of Work).",
+        "Acceso por roles (admin · manager · staff) con sesiones JWT en cookies.",
+        "Más de 260 tests: unitarios, de integración HTTP y de repositorios contra PostgreSQL real (Testcontainers). El CI además ejecuta cada migración hacia arriba y hacia abajo."
+      ]
     },
     "items": [
       {
@@ -182,7 +198,8 @@
         ],
         "link": ""
       }
-    ]
+    ],
+    "highlights": "Decisiones técnicas clave"
   },
   "transferable": {
     "title": "Habilidades transferibles",
