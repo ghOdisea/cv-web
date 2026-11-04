@@ -123,7 +123,13 @@
       "meta": "Proyecto personal · Oct 2024 – actualidad",
       "problem": "PENDING — describe el problema que resuelve la plataforma.",
       "solution": "Aplicación web para organizar eventos y personal, nacida de mi propia experiencia gestionando barras en grandes eventos.",
-      "tags": ["Node.js", "TypeScript", "Docker", "CI/CD", "APIs en tiempo real"],
+      "tags": [
+        "Node.js",
+        "TypeScript",
+        "Docker",
+        "CI/CD",
+        "APIs en tiempo real"
+      ],
       "diagram": {
         "label": "Diagrama de arquitectura simplificado",
         "client": "Cliente web",
@@ -133,7 +139,8 @@
         "db": "Base de datos",
         "dbDetail": "PENDING",
         "infra": "Docker · CI/CD (PENDING — herramienta)"
-      }
+      },
+      "screenshots": []
     },
     "items": [
       {
@@ -141,14 +148,21 @@
         "badge": "Finalista",
         "meta": "Hackathon de Barcelona Activa · Oct 2024",
         "text": "Aplicación con información de los distritos de Barcelona construida sobre Open Data BCN.",
-        "tags": ["PENDING — stack"]
+        "tags": [
+          "PENDING — stack"
+        ],
+        "link": ""
       },
       {
         "name": "NASA App Challenges Hackathon",
         "badge": "",
         "meta": "Hackathon · Oct 2024",
         "text": "\"Sun App\", hecha con recursos oficiales de la NASA; backend en Node.js/TypeScript; presentada ante el jurado y un público no técnico.",
-        "tags": ["Node.js", "TypeScript"]
+        "tags": [
+          "Node.js",
+          "TypeScript"
+        ],
+        "link": ""
       }
     ]
   },
@@ -158,11 +172,26 @@
     "hospitality": "Hostelería",
     "tech": "Tecnología",
     "rows": [
-      ["Resolver incidencias en directo durante el servicio", "Resolución de incidencias de nivel 2 (M365)"],
-      ["Problemas con clientes, desescalada", "Soporte orientado al cliente, comunicación clara"],
-      ["Planificar turnos, delegar, incorporar y formar al personal", "Trabajo en equipo con Scrum, documentación y mentoría"],
-      ["Optimizar flujos de trabajo, pedidos y mise en place", "Automatización de procesos, diseño backend"],
-      ["Explicar una carta a cualquier cliente", "Explicar temas técnicos a públicos no técnicos (pitch en hackathon)"]
+      [
+        "Resolver incidencias en directo durante el servicio",
+        "Resolución de incidencias de nivel 2 (M365)"
+      ],
+      [
+        "Problemas con clientes, desescalada",
+        "Soporte orientado al cliente, comunicación clara"
+      ],
+      [
+        "Planificar turnos, delegar, incorporar y formar al personal",
+        "Trabajo en equipo con Scrum, documentación y mentoría"
+      ],
+      [
+        "Optimizar flujos de trabajo, pedidos y mise en place",
+        "Automatización de procesos, diseño backend"
+      ],
+      [
+        "Explicar una carta a cualquier cliente",
+        "Explicar temas técnicos a públicos no técnicos (pitch en hackathon)"
+      ]
     ]
   },
   "skills": {
@@ -174,32 +203,84 @@
     "familiar": "Conocimientos de",
     "familiarPending": "PENDING — confirmar",
     "soft": "Habilidades personales",
-    "softItems": ["Resolución de problemas", "Comunicación", "Trabajo en equipo", "Responsabilidad", "Orientación al cliente", "Adaptabilidad", "Aprendizaje continuo"]
+    "softItems": [
+      "Resolución de problemas",
+      "Comunicación",
+      "Trabajo en equipo",
+      "Responsabilidad",
+      "Orientación al cliente",
+      "Adaptabilidad",
+      "Aprendizaje continuo"
+    ]
   },
   "education": {
     "title": "Formación y certificaciones",
     "educationTitle": "Formación",
     "certificationsTitle": "Certificaciones",
     "items": [
-      { "name": "Backend Developer NodeJS", "org": "Barcelona Activa / IT Academy", "period": "2024 · 18 semanas" },
-      { "name": "Fundamentos de programación en JavaScript", "org": "Barcelona Activa", "period": "2024 · 7 semanas" },
-      { "name": "ITS Python", "org": "Fundació CIM · UPC", "period": "2023" },
-      { "name": "Diseño CAD y 3D (AutoCAD, SolidWorks, Inventor, diseño paramétrico para impresión 3D)", "org": "CIM · UPC", "period": "2020–2022" },
-      { "name": "Barmanager y Mixología", "org": "IAC Training", "period": "2016–2019" },
-      { "name": "Bartender Profesional", "org": "Instituto Argentino de Coctelería", "period": "2015" },
-      { "name": "Técnico Electromecánico", "org": "E.T. N°11, Argentina", "period": "2005–2011" }
+      {
+        "name": "Backend Developer NodeJS",
+        "org": "Barcelona Activa / IT Academy",
+        "period": "2024 · 18 semanas"
+      },
+      {
+        "name": "Fundamentos de programación en JavaScript",
+        "org": "Barcelona Activa",
+        "period": "2024 · 7 semanas"
+      },
+      {
+        "name": "ITS Python",
+        "org": "Fundació CIM · UPC",
+        "period": "2023"
+      },
+      {
+        "name": "Diseño CAD y 3D (AutoCAD, SolidWorks, Inventor, diseño paramétrico para impresión 3D)",
+        "org": "CIM · UPC",
+        "period": "2020–2022"
+      },
+      {
+        "name": "Barmanager y Mixología",
+        "org": "IAC Training",
+        "period": "2016–2019"
+      },
+      {
+        "name": "Bartender Profesional",
+        "org": "Instituto Argentino de Coctelería",
+        "period": "2015"
+      },
+      {
+        "name": "Técnico Electromecánico",
+        "org": "E.T. N°11, Argentina",
+        "period": "2005–2011"
+      }
     ],
     "certifications": [
-      { "name": "SC-900 Exam Prep", "org": "QA", "period": "Septiembre 2025" }
+      {
+        "name": "SC-900 Exam Prep",
+        "org": "QA",
+        "period": "Septiembre 2025"
+      }
     ]
   },
   "languages": {
     "title": "Idiomas",
     "items": [
-      { "name": "Español", "level": "Nativo" },
-      { "name": "Inglés", "level": "Avanzado" },
-      { "name": "Catalán", "level": "Conversacional (A2–B1)" },
-      { "name": "Francés", "level": "Conversacional (A2–B1)" }
+      {
+        "name": "Español",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Avanzado"
+      },
+      {
+        "name": "Catalán",
+        "level": "Conversacional (A2–B1)"
+      },
+      {
+        "name": "Francés",
+        "level": "Conversacional (A2–B1)"
+      }
     ]
   },
   "contact": {

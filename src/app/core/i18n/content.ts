@@ -8,3 +8,8 @@ import { translateObjectSignal } from '@jsverse/transloco';
 export function content<T>(key: string): Signal<T> {
   return translateObjectSignal(key) as unknown as Signal<T>;
 }
+
+/** True for owner-provided content still missing (rendered with the `.pending` style). */
+export function isPending(text: string | null | undefined): boolean {
+  return !text || text.startsWith('PENDING');
+}

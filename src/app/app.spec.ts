@@ -55,4 +55,20 @@ describe('App sections', () => {
     expect(el.querySelector('.hero a[href^="mailto:"]')).toBeTruthy();
     expect(el.querySelectorAll('#path .timeline__item').length).toBe(4);
   });
+
+  it('renders tech roles, collapsed hospitality and the private case study without code link', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const el = fixture.nativeElement as HTMLElement;
+
+    expect(el.querySelectorAll('#experience > .container > .roles > .role').length).toBe(3);
+    const details = el.querySelector<HTMLDetailsElement>('#experience details');
+    expect(details?.open).toBe(false);
+    expect(details?.querySelectorAll('.role').length).toBe(3);
+
+    const caseStudy = el.querySelector('#projects .case');
+    expect(caseStudy?.textContent).toContain('Event Organization Platform');
+    expect(caseStudy?.querySelector('a')).toBeNull();
+    expect(el.querySelectorAll('#projects .project').length).toBe(2);
+  });
 });
