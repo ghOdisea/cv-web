@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Gonzalo Fourtané — Technical Support Engineer y Back End Developer",
-    "description": "Cloud Support Engineer especializado en seguridad e identidad de Microsoft 365, con experiencia en desarrollo backend con TypeScript y Node.js."
+    "description": "Ex Cloud Support Engineer (seguridad e identidad de Microsoft 365) con experiencia en desarrollo backend con TypeScript y Node.js. Abierto a nuevas oportunidades."
   },
   "nav": {
     "skip": "Saltar al contenido",
@@ -20,18 +20,19 @@
   "hero": {
     "name": "Gonzalo Fourtané",
     "title": "Technical Support Engineer / Back End Developer",
-    "tagline": "De más de 8 años liderando equipos de barra bajo presión a dar soporte de seguridad cloud a empresas y desarrollar software backend.",
+    "tagline": "Tras más de 8 años liderando equipos de barra bajo presión, di el salto al soporte de seguridad cloud para empresas, y desarrollo software backend.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "email": "Email",
     "linkedinLabel": "Perfil de LinkedIn (se abre en una pestaña nueva)",
     "githubLabel": "Perfil de GitHub (se abre en una pestaña nueva)",
     "emailLabel": "Enviarme un email",
-    "downloadCv": "Descargar CV (PDF)"
+    "downloadCv": "Descargar CV (PDF)",
+    "openToWork": "Disponible"
   },
   "about": {
     "title": "Sobre mí",
-    "text": "Cloud Support Engineer especializado en el ecosistema de seguridad e identidad de Microsoft 365 (Defender, Purview, Entra ID), con experiencia en desarrollo backend con TypeScript y Node.js. Antes de dedicarme a la tecnología, pasé años liderando equipos de hostelería en entornos de alta presión, algo que ha marcado cómo gestiono incidencias, cómo me comunico con los clientes y cómo me hago cargo de los problemas."
+    "text": "He trabajado como Cloud Support Engineer especializado en el ecosistema de seguridad e identidad de Microsoft 365 (Defender, Purview, Entra ID) y tengo experiencia en desarrollo backend con TypeScript y Node.js. Antes de dedicarme a la tecnología, pasé años liderando equipos de hostelería en entornos de alta presión, algo que ha marcado cómo gestiono incidencias, cómo me comunico con los clientes y cómo me hago cargo de los problemas."
   },
   "path": {
     "title": "Mi trayectoria",
@@ -110,6 +111,18 @@
       ],
       "earlierTitle": "Puestos anteriores",
       "earlier": "Lead Bartender en The Corner Hotel (4*, NN Hotels, 2017–2018); Surf House (2017); Lead Bartender en Ikibana y trabajo en bodega en la cervecería La Textil Collective (2023)."
+    },
+    "industry": {
+      "summary": "Mantenimiento industrial y logística (2012–2015)",
+      "hint": "Ver puesto",
+      "items": [
+        {
+          "role": "Mantenimiento — VRAC (transporte a granel)",
+          "company": "Empresa de gases del aire",
+          "period": "2012 – 2015",
+          "text": "Planos de tuberías de camiones cisterna para el transporte de nitrógeno y oxígeno líquido: desde el diseño 2D/3D de tuberías y diagramas de flujo en AutoCAD hasta la ejecución en obra, dirigiendo equipos de soldadores y mecánicos para montar las instalaciones en cliente. También dediqué gran parte de mi trabajo a organizar el almacén de materiales de toda la empresa (cientos de referencias), aplicando metodologías de organización y llevando el control de stock."
+        }
+      ]
     }
   },
   "projects": {

@@ -10,29 +10,37 @@
       }
     </ol>
 
-    <details class="hospitality card">
-      <summary class="hospitality__summary">
-        <span>
-          <strong>{{ t('experience.hospitality.summary') }}</strong>
-          <span class="muted hospitality__hint">{{ t('experience.hospitality.hint') }}</span>
-        </span>
-        <app-icon name="chevron" class="hospitality__chevron" />
-      </summary>
-
-      <ol role="list" class="roles roles--compact">
-        @for (r of hospitality(); track $index) {
-          <li class="role">
-            <ng-container *ngTemplateOutlet="roleTpl; context: { $implicit: r }" />
-          </li>
-        }
-      </ol>
-      <p class="hospitality__earlier">
-        <strong>{{ t('experience.hospitality.earlierTitle') }}:</strong>
-        <span class="muted">{{ t('experience.hospitality.earlier') }}</span>
-      </p>
-    </details>
+    <div class="groups">
+      <ng-container *ngTemplateOutlet="groupTpl; context: { $implicit: hospitality() }" />
+      <ng-container *ngTemplateOutlet="groupTpl; context: { $implicit: industry() }" />
+    </div>
   </div>
 </section>
+
+<ng-template #groupTpl let-g>
+  <details class="group card">
+    <summary class="group__summary">
+      <span>
+        <strong>{{ g.summary }}</strong>
+        <span class="muted group__hint">{{ g.hint }}</span>
+      </span>
+      <app-icon name="chevron" class="group__chevron" />
+    </summary>
+
+    <ol role="list" class="roles roles--compact">
+      @for (r of g.items; track $index) {
+        <li class="role">
+          <ng-container *ngTemplateOutlet="roleTpl; context: { $implicit: r }" />
+        </li>
+      }
+    </ol>
+    @if (g.earlier) {
+      <p class="group__earlier">
+        <strong>{{ g.earlierTitle }}:</strong>{{ ' ' }}<span class="muted">{{ g.earlier }}</span>
+      </p>
+    }
+  </details>
+</ng-template>
 
 <ng-template #roleTpl let-r>
   <p class="role__period">{{ r.period }}</p>

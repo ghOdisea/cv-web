@@ -1,5 +1,8 @@
 <section class="hero" aria-labelledby="hero-title" *transloco="let t">
   <div class="container">
+    @if (openToWork) {
+      <p class="hero__status"><span class="hero__status-dot" aria-hidden="true"></span>{{ t('hero.openToWork') }}</p>
+    }
     <p class="hero__eyebrow">{{ t('hero.title') }}</p>
     <h1 id="hero-title" class="hero__name">{{ t('hero.name') }}</h1>
     <p class="hero__tagline">{{ t('hero.tagline') }}</p>

@@ -62,9 +62,14 @@ describe('App sections', () => {
     const el = fixture.nativeElement as HTMLElement;
 
     expect(el.querySelectorAll('#experience > .container > .roles > .role').length).toBe(3);
-    const details = el.querySelector<HTMLDetailsElement>('#experience details');
-    expect(details?.open).toBe(false);
-    expect(details?.querySelectorAll('.role').length).toBe(3);
+    const [hospitality, industry] = Array.from(
+      el.querySelectorAll<HTMLDetailsElement>('#experience details'),
+    );
+    expect(hospitality.open).toBe(false);
+    expect(hospitality.querySelectorAll('.role').length).toBe(3);
+    expect(industry.open).toBe(false);
+    expect(industry.textContent).toContain('AutoCAD');
+    expect(el.querySelector('.hero__status')?.textContent).toContain('Open to work');
 
     const caseStudy = el.querySelector('#projects .case');
     expect(caseStudy?.textContent).toContain('Event Organization Platform');
