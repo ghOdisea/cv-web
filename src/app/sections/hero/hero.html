@@ -1,0 +1,44 @@
+<section class="hero" aria-labelledby="hero-title" *transloco="let t">
+  <div class="container">
+    <p class="hero__eyebrow">{{ t('hero.title') }}</p>
+    <h1 id="hero-title" class="hero__name">{{ t('hero.name') }}</h1>
+    <p class="hero__tagline">{{ t('hero.tagline') }}</p>
+
+    <ul role="list" class="hero__actions">
+      <li>
+        <a
+          class="btn btn--primary"
+          [href]="profile.linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="t('hero.linkedinLabel')"
+        >
+          <app-icon name="linkedin" /> {{ t('hero.linkedin') }}
+        </a>
+      </li>
+      <li>
+        <a
+          class="btn"
+          [href]="profile.github"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="t('hero.githubLabel')"
+        >
+          <app-icon name="github" /> {{ t('hero.github') }}
+        </a>
+      </li>
+      <li>
+        <a class="btn" [href]="mailto()" [attr.aria-label]="t('hero.emailLabel')">
+          <app-icon name="mail" /> {{ t('hero.email') }}
+        </a>
+      </li>
+      @if (cvPdf(); as pdf) {
+        <li>
+          <a class="btn" [href]="pdf" download>
+            <app-icon name="download" /> {{ t('hero.downloadCv') }}
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</section>
