@@ -1,0 +1,26 @@
+<section id="transferable" class="section" aria-labelledby="transferable-title" *transloco="let t">
+  <div class="container">
+    <h2 id="transferable-title" class="section__title">{{ t('transferable.title') }}</h2>
+    <p class="muted intro">{{ t('transferable.intro') }}</p>
+
+    <table class="bridge">
+      <caption class="visually-hidden">{{ t('transferable.title') }}</caption>
+      <thead>
+        <tr>
+          <th scope="col">{{ t('transferable.hospitality') }}</th>
+          <th scope="col"><span class="visually-hidden">→</span></th>
+          <th scope="col">{{ t('transferable.tech') }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of rows(); track $index) {
+          <tr>
+            <td [attr.data-label]="t('transferable.hospitality')">{{ row[0] }}</td>
+            <td class="bridge__arrow" aria-hidden="true">→</td>
+            <td [attr.data-label]="t('transferable.tech')">{{ row[1] }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

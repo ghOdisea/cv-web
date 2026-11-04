@@ -71,4 +71,14 @@ describe('App sections', () => {
     expect(caseStudy?.querySelector('a')).toBeNull();
     expect(el.querySelectorAll('#projects .project').length).toBe(2);
   });
+
+  it('renders transferable skills table and grouped skills', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const el = fixture.nativeElement as HTMLElement;
+
+    expect(el.querySelectorAll('#transferable tbody tr').length).toBe(5);
+    expect(el.querySelectorAll('#skills .group').length).toBe(6);
+    expect(el.querySelector('#skills')?.textContent).toContain('Entra ID');
+  });
 });
