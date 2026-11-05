@@ -1,6 +1,6 @@
-# cv-web
+# My Web
 
-Personal CV website of **Gonzalo Fourtané** — a single-page application to quickly show who I am, what I do and how to get in touch (LinkedIn, GitHub, email).
+My Personal web page CV — a single-page application to quickly show who I am, what I do and how to get in touch (LinkedIn, GitHub, email).
 
 > 🚧 Work in progress. The site is not published until all content is reviewed.
 
