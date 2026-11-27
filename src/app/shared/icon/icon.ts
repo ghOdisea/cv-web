@@ -9,7 +9,8 @@ export type IconName =
   | 'check'
   | 'chevron'
   | 'lock'
-  | 'external';
+  | 'external'
+  | 'image';
 
 /** Decorative inline SVG icon (always aria-hidden; label the parent control instead). */
 @Component({

@@ -35,13 +35,19 @@
           <app-icon name="mail" /> {{ t('hero.email') }}
         </a>
       </li>
-      @if (cvPdf(); as pdf) {
-        <li>
+      <li>
+        @if (cvPdf(); as pdf) {
           <a class="btn" [href]="pdf" download>
             <app-icon name="download" /> {{ t('hero.downloadCv') }}
           </a>
-        </li>
-      }
+        } @else {
+          <!-- TODO: add public/cv/cv-<lang>.pdf and flip CV_PDF_AVAILABLE in core/profile.ts -->
+          <button type="button" class="btn" disabled>
+            <app-icon name="download" /> {{ t('hero.downloadCv') }}
+            <span class="btn__note">{{ t('hero.cvSoon') }}</span>
+          </button>
+        }
+      </li>
     </ul>
   </div>
 </section>

@@ -10,11 +10,11 @@ export const OPEN_TO_WORK = true;
 
 /**
  * CV PDFs per language, served from `public/cv/cv-<lang>.pdf`.
- * Set to `true` once the file is added — the download button only shows for available files.
+ * Set to `true` once the file is added — until then the download button shows as disabled ("coming soon").
  */
 export const CV_PDF_AVAILABLE: Record<Lang, boolean> = {
-  en: false, // PENDING: add public/cv/cv-en.pdf
-  es: false, // PENDING: add public/cv/cv-es.pdf
+  en: false, // TODO: add public/cv/cv-en.pdf
+  es: false, // TODO: add public/cv/cv-es.pdf
 };
 
 export function cvPdfPath(lang: Lang): string {

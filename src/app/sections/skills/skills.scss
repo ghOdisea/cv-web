@@ -12,12 +12,6 @@
   margin-bottom: var(--space-4);
 }
 
-.group__flag {
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding-inline: var(--space-1);
-}
-
 .tag--soft {
   border-color: color-mix(in srgb, var(--color-accent) 45%, var(--color-border));
 }

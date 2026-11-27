@@ -33,6 +33,7 @@ interface Project {
   text: string;
   tags: string[];
   link: string;
+  linkLabel: string;
 }
 
 @Component({
