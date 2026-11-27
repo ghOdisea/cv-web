@@ -80,8 +80,12 @@
             <img [src]="shot.src" [alt]="shot.alt" loading="lazy" decoding="async" width="1600" height="1000" />
           </li>
         } @empty {
+          <!-- TODO: add screenshots to public/projects/event-platform/ and list them in i18n projects.eventPlatform.screenshots -->
           @for (slot of placeholderSlots; track slot) {
-            <li class="shots__placeholder pending">{{ t('projects.screenshotPending') }}</li>
+            <li class="shots__placeholder">
+              <app-icon name="image" />
+              <span>{{ t('projects.screenshotSoon') }}</span>
+            </li>
           }
         }
       </ul>
@@ -100,15 +104,14 @@
           <p class="project__text">{{ p.text }}</p>
           <ul role="list" class="tags">
             @for (tag of p.tags; track tag) {
-              <li class="tag" [class.pending]="isPending(tag)">{{ tag }}</li>
+              <li class="tag">{{ tag }}</li>
             }
           </ul>
+          <!-- TODO: Incloumap link -->
           @if (p.link) {
             <a class="project__link" [href]="p.link" target="_blank" rel="noopener noreferrer">
-              {{ p.name }} <app-icon name="external" />
+              {{ p.linkLabel }} <app-icon name="external" />
             </a>
-          } @else {
-            <p class="project__link pending">{{ t('projects.linkPending') }}</p>
           }
         </li>
       }

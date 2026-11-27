@@ -28,7 +28,8 @@
     "githubLabel": "GitHub profile (opens in a new tab)",
     "emailLabel": "Send me an email",
     "downloadCv": "Download CV (PDF)",
-    "openToWork": "Open to work"
+    "openToWork": "Open to work",
+    "cvSoon": "coming soon"
   },
   "about": {
     "title": "About me",
@@ -134,8 +135,7 @@
     "stack": "Stack",
     "architecture": "Architecture",
     "screenshots": "Screenshots",
-    "screenshotPending": "Screenshot — PENDING",
-    "linkPending": "Link — PENDING",
+    "screenshotSoon": "Screenshot coming soon",
     "eventPlatform": {
       "status": "In development",
       "name": "Event Organization Platform",
@@ -184,9 +184,10 @@
         "meta": "Barcelona Activa Hackathon · Oct 2024",
         "text": "App with information on Barcelona's districts built on Open Data BCN.",
         "tags": [
-          "PENDING — stack"
+          "Node.js"
         ],
-        "link": ""
+        "link": "",
+        "linkLabel": ""
       },
       {
         "name": "NASA App Challenges Hackathon",
@@ -197,7 +198,8 @@
           "Node.js",
           "TypeScript"
         ],
-        "link": ""
+        "link": "https://github.com/guifreribas/the_sun_app",
+        "linkLabel": "Code on GitHub"
       }
     ],
     "highlights": "Key technical decisions"
@@ -237,7 +239,6 @@
     "devops": "DevOps & tooling",
     "methodologies": "Methodologies",
     "familiar": "Familiar with",
-    "familiarPending": "PENDING — confirm",
     "soft": "Soft skills",
     "softItems": [
       "Problem Solving",

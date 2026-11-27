@@ -10,12 +10,7 @@
           </h3>
           <ul role="list" class="tags">
             @for (item of g.items; track item) {
-              <li class="tag" [class.pending]="g.pendingItems?.includes(item)">
-                {{ item }}
-                @if (g.pendingItems?.includes(item)) {
-                  <span class="group__flag">— {{ t('skills.familiarPending') }}</span>
-                }
-              </li>
+              <li class="tag">{{ item }}</li>
             }
           </ul>
         </section>

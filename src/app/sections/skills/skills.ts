@@ -6,8 +6,6 @@ interface SkillGroup {
   /** i18n key under `skills.` for the group title. */
   key: 'm365' | 'backend' | 'devops' | 'methodologies' | 'familiar';
   items: readonly string[];
-  /** Items still to be confirmed by the owner (highlighted as PENDING). */
-  pendingItems?: readonly string[];
 }
 
 const SKILL_GROUPS: readonly SkillGroup[] = [
